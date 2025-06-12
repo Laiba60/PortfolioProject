@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="p">
       Hello World
+      <NavBar/>
       <Routes>
         <Route index="/" element={<Home />} />
         <Route index="/about" element={<About />} />
