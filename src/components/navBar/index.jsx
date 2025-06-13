@@ -1,6 +1,7 @@
 import React from 'react'
-import {FaReact} from react-icons/fa;
-import {Link} from react-router-dom;
+import { FaReact } from 'react-icons/fa';
+
+import {Link} from 'react-router-dom';
 const data = [
   {
     label: "Home",
@@ -38,17 +39,18 @@ const NavBar = () => {
 </div>
 <ul className="">
   {
-    data.map((item,key)=>()
-  (
-    <li key={key} className="">
-      <Link to={item.to}>
-      {item.lable}
-      </Link>
-    </li>
-  ))
+    data.map((item, key) => {
+      return (
+        <li key={key} className="">
+          <Link to={item.to}>
+            {item.label}
+          </Link>
+        </li>
+      );
+    })
   }
-
 </ul>
+
 <div className="">
 
 </div>
