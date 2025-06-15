@@ -1,16 +1,14 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import NavBar from "./components/navBar"; 
-import Home from "./pages/home";
-import About from "./pages/about";
-import Resume from "./pages/resume";
-import Skills from "./pages/skills";
-import Portfolio from "./pages/portfolio";
-import Contact from "./pages/contact";
+import Home from "./container/home/index";
+import Skills from "./container/skills";
+import Contact from "./container/contact";
+import Resume from "./container/resume";
+import Portfolio from "./container/portfolio";
+import About from "./container/portfolio";
+
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <div className="p">
