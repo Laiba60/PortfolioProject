@@ -6,7 +6,7 @@ import Contact from "./container/contact";
 import Resume from "./container/resume";
 import Portfolio from "./container/portfolio";
 import About from "./container/portfolio";
-
+import NavBar from "./components/navBar";
 
 function App() {
 
