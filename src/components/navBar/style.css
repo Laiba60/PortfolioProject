@@ -27,3 +27,34 @@ display:none;
     margin-right:1.5rem;
     font-size:1.6rem;
 }
+@media only screen and (max-width: 786px)
+{
+.navbar_container_menu{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:100%;
+    border-top:1px solid #fff ;
+    position:absolute;
+    top:80px;
+    left:-110%;
+    opacity:1px;
+    transition:all 0.5s ease;
+    &.active{
+        background:#181818;
+        left:0px;
+        opacity:1;
+    }
+    &__item{
+        border-bottom:1px solid #282828;
+        margin:0px;
+        padding:20px 0px;
+    }
+}
+.nav_icon{
+    display:block;
+    cursor:pointer;
+    color:var( --yellow-theme-main-color);
+
+}
+}
