@@ -14,3 +14,16 @@
     height:inherit;
     padding: 0px 20px;
 }
+.navbar_container_menu {
+    display:flex;
+    list-style-type:none;
+    text-align:center;
+}
+.nav-icon{
+display:none;
+}
+.navbar_container_menu_item{
+    line-height:40px;
+    margin-right:1.5rem;
+    font-size:1.6rem;
+}

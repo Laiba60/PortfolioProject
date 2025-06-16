@@ -37,16 +37,16 @@ settoogleIcon(!toogleIcon);
   return (
     <div>
       <nav className="navbar"> 
-<div className="navbar_container flex items-center w-[100%] px-[20px] py-[0px]">
-<Link to={'/'} className="navbar_container_logo cursor-poniter text-yellow-700">
+<div className="navbar_container">
+<Link to={'/'} className="navbar_container_logo">
 <FaReact size={30}/>
 </Link>
 </div>
-<ul className="navbar_container_menu flex list-none text-center">
+<ul className="navbar_container_menu">
   {
     data.map((item, key) => {
       return (
-        <li key={key} className="navbar_container_menu mr-[1.5rem] leading-[40px] text-[1.6rem] ">
+        <li key={key} className="navbar_container_menu_item">
           <Link to={item.to} className="navbar_container_menu_links">
             {item.label}
           </Link>
