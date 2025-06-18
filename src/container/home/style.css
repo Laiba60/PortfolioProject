@@ -1,0 +1,63 @@
+.home {
+    position: relative;
+    height: 100vh; /* Ensure it takes full screen */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+.home_text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_text-wrapper h1 {
+    color: #FFEF00;
+    
+    font-size: 4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typingEffectAnimation 2.5s steps(30, end);
+}
+
+.home_contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px; /* Reduce padding */
+    width: 100%; /* Make sure it's full width */
+}
+
+button {
+    font-size: 15px;
+    padding: 8px 40px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    color:white;
+    text-align: center;
+    cursor: pointer;
+   
+}
+button:hover {
+    color:#FFEF00;
+  }
+  
+/* Responsive */
+@media only screen and (max-width: 550px) {
+    .home_text-wrapper h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Typing animation */
+@keyframes typingEffectAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
