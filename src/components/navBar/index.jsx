@@ -41,12 +41,10 @@ settoogleIcon(!toogleIcon);
       <nav className="navbar">
         <div className="navbar_container">
           <Link to={"/"} className="navbar_container_logo">
-            <FaReact size={30} />
+            <FaReact size={30} color="var(--yellow-theme-main-color" />
           </Link>
         </div>
-        <ul className={`navbar_container_menu ${toogleIcon ? 'active' : ''}`}>
-
-        
+        <ul className={`navbar_container_menu ${toogleIcon ? "active" : ""}`}>
           {data.map((item, key) => {
             return (
               <li key={key} className="navbar_container_menu_item">
@@ -58,8 +56,12 @@ settoogleIcon(!toogleIcon);
           })}
         </ul>
 
-        <div className="nav_icons">
-          {toogleIcon ? <Hix size={30} /> : <FaBars size={30} />}
+        <div className="nav_icons" onClick={handleToggleIcon}>
+          {toogleIcon ? (
+            <HiX size={30} color="var(--yellow-theme-main-color)" />
+          ) : (
+            <FaBars size={30} color="var(--yellow-theme-main-color)" />
+          )}
         </div>
       </nav>
     </div>
