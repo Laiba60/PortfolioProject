@@ -5,7 +5,7 @@ import Skills from "./container/skills";
 import Contact from "./container/contact";
 import Resume from "./container/resume";
 import Portfolio from "./container/portfolio";
-import About from "./container/portfolio";
+import About from "./container/about";
 import NavBar from "./components/navBar";
 
 function App() {
