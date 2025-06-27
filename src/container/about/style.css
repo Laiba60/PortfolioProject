@@ -1,0 +1,24 @@
+.about{
+display:flex;
+gap:20px;
+padding:20px;
+width:100%;
+}
+.about_content{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    width:100%;  
+}
+.about_content_personalWrapper{
+width:50%;
+}
+.about_content_personalWrapper h3{
+    margin-bottom:10px;
+    font-size:2.5rem;
+    font-weight:700;
+    color:var(--yellow-theme-main-color);
+}
+.about_content_servicesWrapper{
+width:50%;
+}
