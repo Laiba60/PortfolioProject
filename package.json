@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "prop-types": "^15.8.1",
     "rc-progress": "^4.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -17,6 +18,7 @@
     "react-router-dom": "^7.6.2",
     "react-simple-animate": "^3.5.3",
     "react-tsparticles": "^2.12.2",
+    "react-vertical-timeline-component": "^3.5.3",
     "sass": "^1.89.2",
     "tsparticles": "^3.8.1"
   },
