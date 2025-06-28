@@ -49,7 +49,7 @@ const About = () => {
             <ul>
               {personaldetails.map((item, index) => (
                 <li key={index}>
-                  <span className="title">{item.label}:</span>
+                  <span className="title">{item.label}</span>
                   <span className="value">{item.value}</span>
                 </li>
               ))}

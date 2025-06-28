@@ -1,11 +1,11 @@
  export const data={
     experience:[
         {
-        title:"Frontened Developer",
-        Description:"User experience ,Visual Design"
+        title:"Frontened Developer At Azlogics ",
+        Description:"User experience ,Visual Design,ApI integration"
         },
         {
-            title:"Intern",
+            title:"Intern At FFc",
             Description:"IT manager AT Trade Marketing center Lahore"
         }
     ],
