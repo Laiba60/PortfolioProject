@@ -18,8 +18,10 @@ const About = () => {
   return (
     <section id="about" className="about">
       <PageHeader headerText="About Me" icon={<BsInfoCircleFill size={40} />} />
+
       <div className="about_content">
-        <div className="about_content_personalWrapper">
+        {/* Job Summary */}
+        <div className="about_content_summaryWrapper">
           <Animate
             play
             duration={1.5}
@@ -30,7 +32,10 @@ const About = () => {
             <h3>Front End Developer</h3>
             <p>{jobsummary}</p>
           </Animate>
+        </div>
 
+        {/* Personal Information */}
+        <div className="about_content_personalWrapper">
           <Animate
             play
             duration={1.5}
