@@ -1,8 +1,8 @@
 .home {
     position: relative;
-    height: 100vh; /* Ensure it takes full screen */
+    height: 100vh; 
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 }
@@ -26,8 +26,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px; /* Reduce padding */
-    width: 100%; /* Make sure it's full width */
+    padding-top: 15px; 
+    width: 100%; 
+    white-space: nowrap;
 }
 
 button {
@@ -39,20 +40,21 @@ button {
     color:white;
     text-align: center;
     cursor: pointer;
+    white-space: nowrap;
    
 }
 button:hover {
     color:#FFEF00;
   }
   
-/* Responsive */
+
 @media only screen and (max-width: 550px) {
     .home_text-wrapper h1 {
         font-size: 2rem;
     }
 }
 
-/* Typing animation */
+
 @keyframes typingEffectAnimation {
     from {
         width: 0;
