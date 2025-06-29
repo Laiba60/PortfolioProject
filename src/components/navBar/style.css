@@ -51,16 +51,17 @@
       left: -110%;
       opacity: 0;
       transition: all 0.5s ease;
-      background: transparent;
+      background-color: #181818;
+      z-index: 999;
     }
-  
-    .navbar_container_menu .active {
-      background: #181818;
-      left: 0px;
-      opacity:1
+    
+    .navbar_container_menu.active {
+      left: 0;
+      opacity: 1;
     }
+    
   
-    .navbar_container_menu__item {
+    .navbar_container_menu_item {
       border-bottom: 1px solid #282828;
       margin: 0px;
       padding: 20px 0px;
