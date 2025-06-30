@@ -20,7 +20,6 @@ const About = () => {
       <PageHeader headerText="About Me" icon={<BsInfoCircleFill size={40} />} />
 
       <div className="about_content">
-        {/* Job Summary */}
         <div className="about_content_summaryWrapper">
           <Animate
             play
@@ -34,7 +33,6 @@ const About = () => {
           </Animate>
         </div>
 
-        {/* Personal Information */}
         <div className="about_content_personalWrapper">
           <Animate
             play
