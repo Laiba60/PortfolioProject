@@ -23,10 +23,10 @@ align-items:center;
     .timeline_experience-header-text{
         display: inline-block;
         color: var(--yellow-theme-main-color);
-        font-size: 22px;
+        font-size: 25px;
         font-weight: 700;
         margin-bottom: 20px;
-        text-transform: uppercase;
+        
         border-bottom: 2px solid var(--yellow-theme-main-color);
         padding-bottom: 5px;
     }
@@ -39,7 +39,7 @@ align-items:center;
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 20px;
-        text-transform: uppercase;
+        
       
         padding-bottom: 5px;
     }
