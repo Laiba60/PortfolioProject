@@ -26,6 +26,8 @@
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--yellow-theme-main-color);
+  display:flex;
+  justify-content:flex-start;
 }
 
 .about_content_summaryWrapper p {
