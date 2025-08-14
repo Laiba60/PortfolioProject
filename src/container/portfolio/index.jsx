@@ -10,7 +10,7 @@ import "./style.css";
 const portfoliodata = [
   {
     id: 1,
-    name: "Paradise Website Contributors ",
+    name: "Password Manager ",
     image: Imagefive,
     link: "https://github.com/Laiba60",
   },
@@ -22,13 +22,19 @@ const portfoliodata = [
   },
   {
     id: 3,
-    name: "Password Manager Website Contributors",
+    name: "Ecommerce Website",
     image: Imagethree,
     link: "https://github.com/Laiba60",
   },
   {
     id: 4,
-    name: "Neuromail Website",
+    name: "Lanudary Hub",
+    image: Imagefour,
+    link: "https://github.com/Laiba60",
+  },
+   {
+    id: 5,
+    name: "Elevatrix Website",
     image: Imagefour,
     link: "https://github.com/Laiba60",
   },
