@@ -1,5 +1,9 @@
  export const data={
     experience:[
+         {
+        title:"Frontened Developer At Elevatrix Solutions ",
+        Description:"User experience ,Visual Design,ApI integration"
+        },
         {
         title:"Frontened Developer At Azlogics ",
         Description:"User experience ,Visual Design,ApI integration"
