@@ -1,8 +1,7 @@
 import React from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
-import PageHeader from "../../components/pageHeader";
+import PageHeader from "../components/PageHeader";
 import { Animate } from "react-simple-animate";
-import "./style.css";
 
 const personaldetails = [
   { label: "Name", value: "Laiba Saeed" },
@@ -16,11 +15,16 @@ const jobsummary =
 
 const About = () => {
   return (
-    <section id="about" className="about">
-      <PageHeader headerText="About Me" icon={<BsInfoCircleFill size={40} />} />
+    <section id="about" className="w-full px-5 py-10">
+      <PageHeader
+        headerText="About Me"
+        icon={<BsInfoCircleFill size={40} />}
+      />
 
-      <div className="about_content">
-        <div className="about_content_summaryWrapper">
+      <div className="flex flex-col gap-10 items-start w-full">
+
+        {/* SUMMARY */}
+        <div className="w-full max-w-4xl pl-5 md:pl-3">
           <Animate
             play
             duration={1.5}
@@ -28,12 +32,18 @@ const About = () => {
             start={{ transform: "translateX(-900px)" }}
             end={{ transform: "translateX(0px)" }}
           >
-            <h3>Front End Developer</h3>
-            <p>{jobsummary}</p>
+            <h3 className="text-yellow-400 text-4xl md:text-3xl font-bold mb-3">
+              Front End Developer
+            </h3>
+
+            <p className="text-gray-400 text-lg md:text-base leading-relaxed text-justify pb-5">
+              {jobsummary}
+            </p>
           </Animate>
         </div>
 
-        <div className="about_content_personalWrapper">
+        {/* PERSONAL INFO */}
+        <div className="w-full max-w-4xl pl-5 md:pl-3">
           <Animate
             play
             duration={1.5}
@@ -41,19 +51,25 @@ const About = () => {
             start={{ transform: "translateX(500px)" }}
             end={{ transform: "translateX(0px)" }}
           >
-            <h3 className="personalInformationHeaderText">
+            <h3 className="text-yellow-400 text-3xl md:text-2xl font-bold mb-4">
               Personal Information
             </h3>
-            <ul>
+
+            <ul className="space-y-4">
               {personaldetails.map((item, index) => (
-                <li key={index}>
-                  <span className="title">{item.label}</span>
-                  <span className="value">{item.value}</span>
+                <li key={index} className="flex flex-wrap gap-4">
+                  <span className="text-gray-400 text-lg md:text-base font-semibold">
+                    {item.label}:
+                  </span>
+                  <span className="text-gray-400 text-lg md:text-base">
+                    {item.value}
+                  </span>
                 </li>
               ))}
             </ul>
           </Animate>
         </div>
+
       </div>
     </section>
   );

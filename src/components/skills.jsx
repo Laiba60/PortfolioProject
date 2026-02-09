@@ -1,22 +1,25 @@
 import React from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
-import PageHeader from "../../components/pageHeader";
+import PageHeader from "../components/PageHeader";
 import skillsData from "./utils";
 import { Line } from "rc-progress";
 import { Animate, AnimateKeyframes } from "react-simple-animate";
-import "./style.css";
 
 const Skills = () => {
   return (
-    <section id="skills" className="skills">
+    <section id="skills" className="py-10 px-5">
       <PageHeader
         headerText="My Skills"
         icon={<BsInfoCircleFill size={40} />}
       />
 
-      <div className="skilss_content-wrapper">
+      <div className="flex flex-wrap justify-center gap-5">
+
         {skillsData.map((item, i) => (
-          <div key={i} className="skilss_content-wrapper_inner-content">
+          <div
+            key={i}
+            className="flex flex-col items-center bg-gray-900 rounded-lg p-5 shadow-lg min-w-[300px] max-w-[350px]"
+          >
             <Animate
               play
               duration={1}
@@ -24,12 +27,12 @@ const Skills = () => {
               start={{ transform: "translateX(-200px)" }}
               end={{ transform: "translateX(0px)" }}
             >
-              <h3 className="skilss_content-wrapper_inner-content_category-text">
+              <h3 className="text-yellow-400 text-lg font-bold mb-5 uppercase border-b-2 border-yellow-400 pb-1 text-center">
                 {item.label}
               </h3>
             </Animate>
 
-            <div className="progress-section">
+            <div className="w-full">
               {item.data.map((skillItem, j) => (
                 <AnimateKeyframes
                   key={j}
@@ -38,11 +41,11 @@ const Skills = () => {
                   keyframes={["opacity: 0", "opacity: 1"]}
                   iterationCount="1"
                 >
-                  <div className="progressbar-wrapper">
-                    <p>{skillItem.skillName}</p>
+                  <div className="mb-4">
+                    <p className="text-white text-sm mb-1">{skillItem.skillName}</p>
                     <Line
                       percent={skillItem.percentage}
-                      strokeColor="var(--yellow-theme-main-color)"
+                      strokeColor="#FFEF00"
                       trailWidth={2}
                       strokeLinecap="square"
                     />
@@ -52,6 +55,7 @@ const Skills = () => {
             </div>
           </div>
         ))}
+
       </div>
     </section>
   );
