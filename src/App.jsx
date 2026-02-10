@@ -1,27 +1,42 @@
-import { Routes, Route } from "react-router-dom";
+import React from "react";
 import "./App.css";
 import Home from "./components/home";
-import Skills from "./components/skills";
-import Contact from "./components/contact";
-import Resume from "./components/resume";
-import Portfolio from "./components/portfolio";
 import About from "./components/about";
+import Resume from "./components/resume";
+import Skills from "./components/skills";
+import Portfolio from "./components/portfolio";
+import Contact from "./components/contact";
 import NavBar from "./components/Navbar";
 
 function App() {
-
   return (
-    <div className="">
-    
+    <div className="relative">
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+
+      {/* Sections */}
+      <section id="home">
+        <Home />
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="resume">
+        <Resume />
+      </section>
+
+      <section id="skills">
+        <Skills />
+      </section>
+
+      <section id="portfolio">
+        <Portfolio />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 }

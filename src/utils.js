@@ -1,4 +1,28 @@
-const skillsData = [
+// src/utils.js
+
+// ===== Resume Data =====
+export const resumeData = {
+  experience: [
+    {
+      title: "Frontend Developer",
+      Description: "Worked on React projects",
+      date: "2022-2023",
+    },
+    // add more experience
+  ],
+  education: [
+    {
+      title: "BS Computer Science",
+      Marks: "3.8 GPA",
+      Description: "Khawaja Fareed University",
+      date: "2019-2023",
+    },
+    // add more education
+  ],
+};
+
+// ===== Skills Data =====
+export const skillsData = [
   {
     label: "Front End",
     data: [
@@ -27,5 +51,3 @@ const skillsData = [
     ],
   },
 ];
-
-export default skillsData;

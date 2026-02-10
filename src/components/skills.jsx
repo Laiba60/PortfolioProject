@@ -1,7 +1,8 @@
 import React from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeader from "../components/PageHeader";
-import skillsData from "./utils";
+import { skillsData } from "../utils.js"; 
+
 import { Line } from "rc-progress";
 import { Animate, AnimateKeyframes } from "react-simple-animate";
 
