@@ -21,36 +21,40 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center"
+      className="min-h-screen flex items-center justify-center bg-gray-900"
     >
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8 w-full px-6">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 w-full px-6 max-w-6xl">
 
         {/* LEFT SIDE */}
-        <div className="flex flex-col items-center text-center">
-          <h1 className="text-yellow-400 text-6xl md:text-5xl sm:text-3xl font-bold overflow-hidden whitespace-nowrap animate-typing">
-            Hello, I'm Laiba.
-            <br />
-            Frontend Developer
-          </h1>
-
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <Animate
             play
             duration={1.5}
-            delay={1}
-            start={{ transform: "translateY(550px)" }}
-            end={{ transform: "translateY(0px)" }}
+            start={{ opacity: 0, transform: "translateX(-100px)" }}
+            end={{ opacity: 1, transform: "translateX(0)" }}
           >
-            <div className="flex gap-4 mt-4 justify-center">
+            <h1 className="text-yellow-400 text-5xl sm:text-4xl font-bold mb-4">
+              Hello, I'm Laiba.
+              <br />
+              Frontend Developer
+            </h1>
+
+            <p className="text-gray-300 text-lg mb-6 max-w-md">
+              I build modern, responsive, and interactive web applications
+              using React, TailwindCSS, and modern frontend tools.
+            </p>
+
+            <div className="flex gap-4 flex-wrap justify-center md:justify-start">
               <button
                 onClick={handleScrollToContact}
-                className="px-10 py-2 text-sm bg-black text-white border border-black rounded hover:text-yellow-400 transition"
+                className="px-8 py-3 bg-yellow-400 text-black font-semibold rounded hover:bg-gray-700 transition"
               >
                 Hire Me
               </button>
 
               <button
                 onClick={handleDownloadResume}
-                className="px-10 py-2 text-sm bg-black text-white border border-black rounded hover:text-yellow-400 transition"
+                className="px-8 py-3 border border-yellow-400 text-yellow-400 font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
               >
                 Download Resume
               </button>
@@ -59,14 +63,20 @@ const Home = () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="mt-5 md:mt-0">
-          <img
-            src={profileImg}
-            alt="Laiba Profile"
-            className="w-72 h-72 object-cover rounded-full mx-auto"
-          />
-        </div>
-
+        <Animate
+          play
+          duration={1.5}
+          start={{ opacity: 0, transform: "translateX(100px)" }}
+          end={{ opacity: 1, transform: "translateX(0)" }}
+        >
+          <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl">
+            <img
+              src={profileImg}
+              alt="Laiba Profile"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </Animate>
       </div>
     </section>
   );

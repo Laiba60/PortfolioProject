@@ -1,103 +1,69 @@
 import React from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeader from "../components/PageHeader";
+import { Animate } from "react-simple-animate";
 
-import Imagefive from "../assets/images/image5.png";
-import Imagetwo from "../assets/images/imag2.jpeg";
-import Imagethree from "../assets/images/image3.jpeg";
-import Imagefour from "../assets/images/image4.jpeg";
-
-const portfoliodata = [
+// Example project data
+const projectsData = [
   {
-    id: 1,
-    name: "Password Manager",
-    image: Imagefive,
-    link: "https://github.com/Laiba60",
+    title: "Personal Portfolio Website",
+    description: "A responsive portfolio website built with React, TailwindCSS, and animations.",
+    image: "/assets/images/portfolio1.jpg", // replace with your project images
+    link: "https://github.com/laibasaeed/portfolio",
   },
   {
-    id: 2,
-    name: "Personal Portfolio Website",
-    image: Imagetwo,
-    link: "https://github.com/Laiba60",
+    title: "E-commerce Store",
+    description: "A fully functional e-commerce web app with shopping cart and payment integration.",
+    image: "/assets/images/portfolio2.jpg",
+    link: "https://github.com/laibasaeed/ecommerce",
   },
   {
-    id: 3,
-    name: "Ecommerce Website",
-    image: Imagethree,
-    link: "https://github.com/Laiba60",
+    title: "School Management System",
+    description: "Web application for managing school operations and student data efficiently.",
+    image: "/assets/images/portfolio3.jpg",
+    link: "https://github.com/laibasaeed/school-management",
   },
-  {
-    id: 4,
-    name: "Laundry Hub",
-    image: Imagefour,
-    link: "https://github.com/Laiba60",
-  },
-  {
-    id: 5,
-    name: "Elevatrix Website",
-    image: Imagefour,
-    link: "https://github.com/Laiba60",
-  },
-];
-
-const filterData = [
-  { filterId: 1, label: "All" },
-  { filterId: 2, label: "Development" },
-  { filterId: 3, label: "Design" },
 ];
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="w-full px-5 py-10">
+    <section id="portfolio" className="py-16 px-5 bg-gray-900">
       <PageHeader
         headerText="My Portfolio"
         icon={<BsInfoCircleFill size={40} />}
       />
 
-      <div className="max-w-6xl mx-auto">
-
-        {/* FILTERS */}
-        <ul className="flex gap-5 mb-10 justify-start">
-          {filterData.map((item) => (
-            <li
-              key={item.filterId}
-              className="px-5 py-2 text-sm bg-white border-2 border-yellow-400 rounded-lg cursor-pointer font-medium text-black hover:bg-yellow-400 hover:border-black transition"
-            >
-              {item.label}
-            </li>
-          ))}
-        </ul>
-
-        {/* CARDS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {portfoliodata.map((item) => (
-            <div
-              key={item.id}
-              className="bg-black border border-gray-200 rounded-xl overflow-hidden text-center shadow-md hover:-translate-y-1 transition"
-            >
-              <div className="w-full h-52 overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-full h-full object-cover hover:scale-105 transition"
-                />
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        {projectsData.map((project, i) => (
+          <Animate
+            key={i}
+            play
+            duration={1}
+            delay={i * 0.2}
+            start={{ opacity: 0, transform: "translateY(50px)" }}
+            end={{ opacity: 1, transform: "translateY(0px)" }}
+          >
+            <div className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-5">
+                <h3 className="text-yellow-400 text-xl font-bold mb-2">{project.title}</h3>
+                <p className="text-gray-300 text-sm mb-4">{project.description}</p>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 bg-yellow-400 text-black font-semibold rounded hover:bg-gray-700 transition"
+                >
+                  View Project
+                </a>
               </div>
-
-              <h3 className="py-3 text-yellow-400 font-semibold text-base">
-                {item.name}
-              </h3>
-
-              <a
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mb-5 px-4 py-2 bg-yellow-400 text-black rounded-md font-semibold text-sm hover:bg-black hover:text-white border border-transparent hover:border-yellow-400 transition"
-              >
-                Visit Site
-              </a>
             </div>
-          ))}
-        </div>
+          </Animate>
+        ))}
       </div>
     </section>
   );

@@ -5,95 +5,51 @@ import { Animate } from "react-simple-animate";
 
 const Contact = () => {
   return (
-    <section id="contact" className="w-full px-5 py-10">
-      <PageHeader
-        headerText="My Contact"
-        icon={<BsInfoCircleFill size={40} />}
-      />
+    <section id="contact" className="py-16 px-5 bg-gray-900">
+      <PageHeader headerText="Contact Me" icon={<BsInfoCircleFill size={40} />} />
 
-      <div className="flex flex-col items-center gap-8">
+      <div className="max-w-4xl mx-auto flex flex-col gap-10 mt-10">
 
-        {/* HEADER TEXT */}
         <Animate
           play
-          duration={1}
-          delay={0}
-          start={{ transform: "translateX(-200px)" }}
-          end={{ transform: "translateX(0px)" }}
+          duration={1.2}
+          start={{ opacity: 0, transform: "translateY(-50px)" }}
+          end={{ opacity: 1, transform: "translateY(0)" }}
         >
-          <h3 className="text-yellow-400 text-xl font-extrabold mt-3 text-center">
-            Let's Talk
-          </h3>
+          <h3 className="text-yellow-400 text-2xl font-bold text-center">Let's Talk</h3>
         </Animate>
 
-        {/* FORM */}
         <Animate
           play
-          duration={1}
-          delay={0}
-          start={{ transform: "translateX(200px)" }}
-          end={{ transform: "translateX(0px)" }}
+          duration={1.2}
+          start={{ opacity: 0, transform: "translateY(50px)" }}
+          end={{ opacity: 1, transform: "translateY(0)" }}
         >
-          <form className="flex flex-col items-center gap-5 w-full">
-
-            {/* NAME */}
-            <div className="w-full max-w-xl flex flex-col">
-              <label
-                htmlFor="name"
-                className="mb-1 text-yellow-400 text-lg font-medium"
-              >
-                Name
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                className="w-full px-4 py-3 text-sm border-2 border-yellow-400 rounded-md outline-none focus:ring-2 focus:ring-yellow-400"
-              />
-            </div>
-
-            {/* EMAIL */}
-            <div className="w-full max-w-xl flex flex-col">
-              <label
-                htmlFor="email"
-                className="mb-1 text-yellow-400 text-lg font-medium"
-              >
-                Email
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                className="w-full px-4 py-3 text-sm border-2 border-yellow-400 rounded-md outline-none focus:ring-2 focus:ring-yellow-400"
-              />
-            </div>
-
-            {/* MESSAGE */}
-            <div className="w-full max-w-xl flex flex-col">
-              <label
-                htmlFor="description"
-                className="mb-1 text-yellow-400 text-lg font-medium"
-              >
-                Message
-              </label>
-              <textarea
-                id="description"
-                name="description"
-                rows={5}
-                className="w-full px-4 py-3 text-sm border-2 border-yellow-400 rounded-md outline-none resize-y focus:ring-2 focus:ring-yellow-400"
-              />
-            </div>
-
-            {/* BUTTON */}
+          <form className="flex flex-col gap-6 bg-gray-800 p-8 rounded-xl shadow-xl">
+            <input
+              type="text"
+              placeholder="Name"
+              className="w-full px-4 py-3 rounded-md bg-gray-900 border border-yellow-400 text-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-full px-4 py-3 rounded-md bg-gray-900 border border-yellow-400 text-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            />
+            <textarea
+              rows={5}
+              placeholder="Message"
+              className="w-full px-4 py-3 rounded-md bg-gray-900 border border-yellow-400 text-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-y"
+            ></textarea>
             <button
               type="submit"
-              className="w-full max-w-xs mt-3 px-6 py-3 bg-yellow-400 text-white rounded-md text-base font-semibold hover:bg-gray-500 transition"
+              className="w-full py-3 bg-yellow-400 text-black font-semibold rounded hover:bg-gray-700 transition"
             >
               Send Message
             </button>
-
           </form>
         </Animate>
+
       </div>
     </section>
   );
