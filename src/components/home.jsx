@@ -1,85 +1,73 @@
+
 import React from "react";
-import { Animate } from "react-simple-animate";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import profileImg from "../assets/images/Profileimage.jpg";
 
-const Home = () => {
-  const handleScrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
-  const handleDownloadResume = () => {
-    const link = document.createElement("a");
-    link.href = "/LaibaSaeed.pdf";
-    link.download = "LaibaSaeed.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
+const HeroSection = () => {
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center justify-center bg-gray-900"
-    >
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 w-full px-6 max-w-6xl mx-auto">
-
+    <section className="bg-gray-800 text-white min-h-screen flex items-center px-6 md:px-20">
+      <div className="grid md:grid-cols-2 gap-8 items-center w-full">
+        
         {/* LEFT SIDE */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <Animate
-            play
-            duration={1.5}
-            start={{ opacity: 0, transform: "translateX(-100px)" }}
-            end={{ opacity: 1, transform: "translateX(0)" }}
-          >
-            <h1 className="text-yellow-400 text-5xl sm:text-4xl font-bold mb-4">
-              Hello, I'm Laiba.
-              <br />
-              Frontend Developer
-            </h1>
+        <div className="space-y-6">
+          <p className="text-yellow-400">Hi, This is me</p>
 
-            <p className="text-gray-300 text-lg mb-6 max-w-md">
-              I build modern, responsive, and interactive web applications
-              using React, TailwindCSS, and modern frontend tools.
-            </p>
+          <h1 className="text-4xl md:text-5xl font-bold">
+            <span className="text-yellow-400">Laiba Saeed</span>
+          </h1>
 
-            <div className="flex gap-4 flex-wrap justify-center md:justify-start">
-              <button
-                onClick={handleScrollToContact}
-                className="px-8 py-3 bg-yellow-400 text-black font-semibold rounded hover:bg-gray-700 transition"
-              >
-                Hire Me
-              </button>
+          <h2 className="text-xl font-semibold text-yellow-400">
+            {"< "} 
+            <span className="text-yellow-400">MERN STACK DEVELOPER</span> 
+            {" />"}
+          </h2>
 
-              <button
-                onClick={handleDownloadResume}
-                className="px-8 py-3 border border-yellow-400 text-yellow-400 font-semibold rounded hover:bg-yellow-400 hover:text-black transition"
-              >
-                Download Resume
-              </button>
-            </div>
-          </Animate>
+          <p className="text-yellow-400 max-w-md leading-relaxed">
+            Crafting seamless digital experiences with
+            <span className="text-yellow-400 font-medium">
+              {" "}MongoDB, Express.js, React.js, and Node.js
+            </span>.
+            Passionate about building scalable web applications that merge creativity with cutting-edge technology.
+          </p>
+
+          <button className="border border-yellow-400 text-yellow-400 px-6 py-2 rounded-full hover:bg-red-500 hover:text-white transition duration-300">
+            VIEW MY WORK
+          </button>
+
+          {/* Social Icons */}
+          <div className="flex space-x-4 pt-4">
+            <a href="#" className="border border-gray-700 p-2 rounded-full hover:border-yellow-500 hover:text-yellow-500 transition">
+              <FaGithub />
+            </a>
+            <a href="#" className="border border-gray-700 p-2 rounded-full hover:border-yellow-500 hover:text-yellow-500 transition">
+              <FaLinkedin />
+            </a>
+            <a href="#" className="border border-gray-700 p-2 rounded-full hover:border-yellow-500 hover:text-yellow-500 transition">
+              <FaFacebook />
+            </a>
+          </div>
         </div>
 
-        {/* RIGHT SIDE */}
-        <Animate
-          play
-          duration={1.5}
-          start={{ opacity: 0, transform: "translateX(100px)" }}
-          end={{ opacity: 1, transform: "translateX(0)" }}
-        >
-          <div className="w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl">
+        {/* RIGHT SIDE (Profile Image with Glow Effect) */}
+        <div className="flex justify-center md:justify-end relative">
+          <div className="relative">
+            
+            {/* Glow Effect */}
+            <div className="absolute inset-0 rounded-full bg-yellow-400 blur-3xl opacity-30 animate-pulse"></div>
+
+            {/* Profile Image */}
             <img
-              src={profileImg}
-              alt="Laiba Profile"
-              className="w-full h-full object-cover"
+              src={profileImg}   // Replace with your image path
+              alt="Profile"
+              className="relative w-72 h-72 object-cover rounded-full border-4 border-yellow-400 shadow-lg"
             />
+
           </div>
-        </Animate>
+        </div>
+
       </div>
     </section>
   );
 };
 
-export default Home;
+export default HeroSection;

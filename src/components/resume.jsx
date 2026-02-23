@@ -6,7 +6,7 @@ import { Animate } from "react-simple-animate";
 
 const Resume = () => {
   return (
-    <section id="resume" className="w-full py-16 bg-gray-900">
+    <section id="resume" className="w-full py-16 bg-gray-800">
       <PageHeader
         headerText="My Resume"
         icon={<BsInfoCircleFill size={40} />}

@@ -27,7 +27,7 @@ const projectsData = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-16 px-5 bg-gray-900">
+    <section id="portfolio" className="py-16 px-5 bg-gray-800">
       <PageHeader
         headerText="My Portfolio"
         icon={<BsInfoCircleFill size={40} />}
