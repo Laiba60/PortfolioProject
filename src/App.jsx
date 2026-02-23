@@ -10,33 +10,14 @@ import NavBar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="relative bg-gray-900">
       <NavBar />
-
-      {/* Sections */}
-      <section id="home">
-        <Home />
-      </section>
-
-      <section id="about">
-        <About />
-      </section>
-
-      <section id="resume">
-        <Resume />
-      </section>
-
-      <section id="skills">
-        <Skills />
-      </section>
-
-      <section id="portfolio">
-        <Portfolio />
-      </section>
-
-      <section id="contact">
-        <Contact />
-      </section>
+      <Home />
+      <About />
+      <Resume />
+      <Skills />
+      <Portfolio />
+      <Contact />
     </div>
   );
 }

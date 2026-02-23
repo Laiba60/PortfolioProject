@@ -23,7 +23,7 @@ const Home = () => {
       id="home"
       className="min-h-screen flex items-center justify-center bg-gray-900"
     >
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 w-full px-6 max-w-6xl">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 w-full px-6 max-w-6xl mx-auto">
 
         {/* LEFT SIDE */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
