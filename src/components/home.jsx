@@ -17,20 +17,20 @@ const HeroSection = () => {
           </h1>
 
           <h2 className="text-xl font-semibold text-yellow-400">
-            {"< "} 
+             
             <span className="text-yellow-400">MERN STACK DEVELOPER</span> 
-            {" />"}
+            
           </h2>
 
-          <p className="text-yellow-400 max-w-md leading-relaxed">
+          <p className="text-gray-400 max-w-md leading-relaxed">
             Crafting seamless digital experiences with
-            <span className="text-yellow-400 font-medium">
+            <span className="text-gray-400 font-medium">
               {" "}MongoDB, Express.js, React.js, and Node.js
             </span>.
             Passionate about building scalable web applications that merge creativity with cutting-edge technology.
           </p>
 
-          <button className="border border-yellow-400 text-yellow-400 px-6 py-2 rounded-full hover:bg-red-500 hover:text-white transition duration-300">
+          <button className="border border-yellow-400 text-yellow-400 px-6 py-2 rounded-full hover:bg-yellow-500 hover:text-white transition duration-300">
             VIEW MY WORK
           </button>
 
