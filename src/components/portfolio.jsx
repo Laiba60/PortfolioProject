@@ -6,22 +6,58 @@ import { Animate } from "react-simple-animate";
 // Example project data
 const projectsData = [
   {
-    title: "Personal Portfolio Website",
+    title: "Fitness Website",
     description: "A responsive portfolio website built with React, TailwindCSS, and animations.",
     image: "/assets/images/portfolio1.jpg", // replace with your project images
-    link: "https://github.com/laibasaeed/portfolio",
+    link: "https://spontaneous-sawine-30d8b0.netlify.app/",
   },
   {
-    title: "E-commerce Store",
+    title: "Music Website",
     description: "A fully functional e-commerce web app with shopping cart and payment integration.",
     image: "/assets/images/portfolio2.jpg",
     link: "https://github.com/laibasaeed/ecommerce",
   },
   {
-    title: "School Management System",
+    title: "Xpertiverse Website",
     description: "Web application for managing school operations and student data efficiently.",
     image: "/assets/images/portfolio3.jpg",
-    link: "https://github.com/laibasaeed/school-management",
+    link: "https://steady-parfait-f26b2b.netlify.app/",
+  },
+  {
+    title: "Mini Bussiness Dashboard",
+    description: "Web application for managing school operations and student data efficiently.",
+    image: "/assets/images/portfolio3.jpg",
+    link: "https://steady-parfait-f26b2b.netlify.app/",
+  },
+  {
+    title: "Ecommerce Website",
+    description: "Web application for managing school operations and student data efficiently.",
+    image: "/assets/images/portfolio3.jpg",
+    link: "https://steady-parfait-f26b2b.netlify.app/",
+  },
+   {
+    title: "The Lanudary Hub",
+    description: "Web application for managing school operations and student data efficiently.",
+    image: "/assets/images/portfolio3.jpg",
+    link: "https://steady-parfait-f26b2b.netlify.app/",
+  },
+  {
+    title: "Scoolarc Frontend",
+    description: "Web application for managing school operations and student data efficiently.",
+    image: "/assets/images/portfolio3.jpg",
+    link: "https://steady-parfait-f26b2b.netlify.app/",
+  },
+  {
+    title: "AI Powered Resume and Job Matcher",
+    description: "Web application for managing school operations and student data efficiently.",
+    image: "/assets/images/portfolio3.jpg",
+    link: "https://steady-parfait-f26b2b.netlify.app/",
+  },
+  {
+    title: "Educational Project Management System",
+    description: "Web application for managing school operations and student data efficiently.",
+    image: "/assets/images/portfolio3.jpg",
+    link: "https://steady-parfait-f26b2b.netlify.app/",
   },
 ];
 
