@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-import profileImg from "../assets/images/Profileimage.jpg";
+
 
 const HeroSection = () => {
   return (
@@ -69,10 +69,10 @@ const HeroSection = () => {
 
               {/* Profile Image */}
               <img
-                src={profileImg}
-                alt="Profile"
-                className="relative w-72 h-87 object-cover rounded-full border-4 border-yellow-400 shadow-lg"
-              />
+  src="/images/Profileimage.jpg"
+  alt="Profile"
+  className="relative w-72 h-85 object-cover rounded-full border-4 border-yellow-400 shadow-lg"
+/>
             </div>
           </div>
 

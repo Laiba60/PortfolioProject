@@ -8,55 +8,55 @@ const projectsData = [
   {
     title: "Fitness Website",
     description: "A responsive portfolio website built with React, TailwindCSS, and animations.",
-    image: "/assets/images/portfolio1.jpg", // replace with your project images
+    image: "/images/FitnessWebsite.png", // replace with your project images
     link: "https://spontaneous-sawine-30d8b0.netlify.app/",
   },
   {
     title: "Music Website",
     description: "A fully functional e-commerce web app with shopping cart and payment integration.",
-    image: "/assets/images/portfolio2.jpg",
+    image: "/images/MusicWebsite.png",
     link: "https://papaya-babka-682202.netlify.app/",
   },
   {
     title: "Xpertiverse Website",
     description: "Web application for managing school operations and student data efficiently.",
-    image: "/assets/images/portfolio3.jpg",
+    image: "/images/xpertiverse.png",
     link: "https://steady-parfait-f26b2b.netlify.app/",
   },
   {
     title: "Mini Bussiness Dashboard",
     description: "Web application for managing school operations and student data efficiently.",
-    image: "/assets/images/portfolio3.jpg",
+    image: "/images/MiniBussiness.png",
     link: "https://laiba60.github.io/Mini-Business-Dashboard/",
   },
   {
     title: "Ecommerce Website",
     description: "Web application for managing school operations and student data efficiently.",
-    image: "/assets/images/portfolio3.jpg",
+    image: "/images/EcommerceWebsite.png",
     link: "https://spiffy-quokka-5cd07b.netlify.app/",
   },
    {
     title: "The Lanudary Hub",
     description: "Web application for managing school operations and student data efficiently.",
-    image: "/assets/images/portfolio3.jpg",
+    image: "/images/LanudaryHub.png",
     link: "https://laiba60.github.io/The-Laundary-Hub/",
   },
   {
     title: "Scoolarc Frontend",
     description: "Web application for managing school operations and student data efficiently.",
-    image: "/assets/images/portfolio3.jpg",
+    image: "/images/portfolio3.jpg",
     link: "https://rainbow-panda-b2540d.netlify.app/login",
   },
   {
     title: "AI Powered Resume and Job Matcher",
     description: "Web application for managing school operations and student data efficiently.",
-    image: "/assets/images/portfolio3.jpg",
+    image: "/images/portfolio3.jpg",
     link: "https://steady-parfait-f26b2b.netlify.app/",
   },
   {
     title: "Educational Project Management System",
     description: "Web application for managing school operations and student data efficiently.",
-    image: "/assets/images/portfolio3.jpg",
+    image: "/images/portfolio3.jpg",
     link: "https://steady-parfait-f26b2b.netlify.app/",
   },
 ];
