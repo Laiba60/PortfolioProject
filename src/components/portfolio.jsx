@@ -15,7 +15,7 @@ const projectsData = [
     title: "Music Website",
     description: "A fully functional e-commerce web app with shopping cart and payment integration.",
     image: "/assets/images/portfolio2.jpg",
-    link: "https://github.com/laibasaeed/ecommerce",
+    link: "https://papaya-babka-682202.netlify.app/",
   },
   {
     title: "Xpertiverse Website",
@@ -33,7 +33,7 @@ const projectsData = [
     title: "Ecommerce Website",
     description: "Web application for managing school operations and student data efficiently.",
     image: "/assets/images/portfolio3.jpg",
-    link: "https://steady-parfait-f26b2b.netlify.app/",
+    link: "https://spiffy-quokka-5cd07b.netlify.app/",
   },
    {
     title: "The Lanudary Hub",
