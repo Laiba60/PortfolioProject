@@ -27,7 +27,7 @@ const projectsData = [
     title: "Mini Bussiness Dashboard",
     description: "Web application for managing school operations and student data efficiently.",
     image: "/assets/images/portfolio3.jpg",
-    link: "https://steady-parfait-f26b2b.netlify.app/",
+    link: "https://laiba60.github.io/Mini-Business-Dashboard/",
   },
   {
     title: "Ecommerce Website",
@@ -39,7 +39,7 @@ const projectsData = [
     title: "The Lanudary Hub",
     description: "Web application for managing school operations and student data efficiently.",
     image: "/assets/images/portfolio3.jpg",
-    link: "https://steady-parfait-f26b2b.netlify.app/",
+    link: "https://laiba60.github.io/The-Laundary-Hub/",
   },
   {
     title: "Scoolarc Frontend",
