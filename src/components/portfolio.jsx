@@ -45,7 +45,7 @@ const projectsData = [
     title: "Scoolarc Frontend",
     description: "Web application for managing school operations and student data efficiently.",
     image: "/assets/images/portfolio3.jpg",
-    link: "https://steady-parfait-f26b2b.netlify.app/",
+    link: "https://rainbow-panda-b2540d.netlify.app/login",
   },
   {
     title: "AI Powered Resume and Job Matcher",
