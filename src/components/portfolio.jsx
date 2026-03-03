@@ -41,24 +41,7 @@ const projectsData = [
     image: "/images/LanudaryHub.png",
     link: "https://laiba60.github.io/The-Laundary-Hub/",
   },
-  {
-    title: "Scoolarc Frontend",
-    description: "Web application for managing school operations and student data efficiently.",
-    image: "/images/portfolio3.jpg",
-    link: "https://rainbow-panda-b2540d.netlify.app/login",
-  },
-  {
-    title: "AI Powered Resume and Job Matcher",
-    description: "Web application for managing school operations and student data efficiently.",
-    image: "/images/portfolio3.jpg",
-    link: "https://steady-parfait-f26b2b.netlify.app/",
-  },
-  {
-    title: "Educational Project Management System",
-    description: "Web application for managing school operations and student data efficiently.",
-    image: "/images/portfolio3.jpg",
-    link: "https://steady-parfait-f26b2b.netlify.app/",
-  },
+ 
 ];
 
 const Portfolio = () => {
