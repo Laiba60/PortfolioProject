@@ -5,7 +5,7 @@ import profileImg from "../assets/images/Profileimage.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gray-800 text-white min-h-screen flex items-center px-6 md:px-20">
+    <section className="bg-gray-800 text-white min-h-screen flex items-center px-6 md:px-20 pt-20">
       <div className="grid md:grid-cols-2 gap-8 items-center w-full">
         
         {/* LEFT SIDE */}
@@ -59,7 +59,7 @@ const HeroSection = () => {
             <img
               src={profileImg}   // Replace with your image path
               alt="Profile"
-              className="relative w-72 h-72 object-cover rounded-full border-4 border-yellow-400 shadow-lg"
+              className="relative w-72 h-90 object-cover rounded-full border-4 border-yellow-400 shadow-lg"
             />
 
           </div>
