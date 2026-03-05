@@ -8,36 +8,42 @@ const projectsData = [
   {
     title: "Fitness Website",
     description: "A responsive portfolio website built with React, TailwindCSS, and animations.",
-    image: "/images/FitnessWebsite.png", // replace with your project images
+    image: "/images/FitnessWebsite.png", 
     link: "https://spontaneous-sawine-30d8b0.netlify.app/",
   },
   {
+    title: "Password Manager",
+    description: "A secure and responsive password manager built with React and Tailwind CSS that allows users to store, generate, and manage passwords safely with a clean and user-friendly interface.",
+    image: "/images/FitnessWebsite.png", 
+    link: "https://neuropassword.com/",
+  },
+  {
     title: "Music Website",
-    description: "A fully functional e-commerce web app with shopping cart and payment integration.",
+    description: "A modern and responsive music website that allows users to explore albums, artists, and playlists with an interactive UI and smooth user experience.",
     image: "/images/MusicWebsite.png",
     link: "https://papaya-babka-682202.netlify.app/",
   },
   {
     title: "Xpertiverse Website",
-    description: "Web application for managing school operations and student data efficiently.",
+    description: "A modern and responsive web application built using React.js and Tailwind CSS, featuring a clean UI, reusable components, and optimized performance for a smooth user experience.",
     image: "/images/xpertiverse.png",
     link: "https://steady-parfait-f26b2b.netlify.app/",
   },
   {
     title: "Mini Bussiness Dashboard",
-    description: "Web application for managing school operations and student data efficiently.",
+    description: "A responsive mini business dashboard that provides insights through interactive charts and data visualization, helping users track performance, sales, and key business metrics efficiently.",
     image: "/images/MiniBussiness.png",
     link: "https://laiba60.github.io/Mini-Business-Dashboard/",
   },
   {
     title: "Ecommerce Website",
-    description: "Web application for managing school operations and student data efficiently.",
+    description: "A fully responsive e-commerce website that allows users to browse products, add items to the cart, and complete purchases with a smooth and user-friendly shopping experience.",
     image: "/images/EcommerceWebsite.png",
     link: "https://spiffy-quokka-5cd07b.netlify.app/",
   },
    {
     title: "The Lanudary Hub",
-    description: "Web application for managing school operations and student data efficiently.",
+    description: "A responsive laundry service website that allows users to explore services, book pickups, and manage orders through a clean and user-friendly interface.",
     image: "/images/LanudaryHub.png",
     link: "https://laiba60.github.io/The-Laundary-Hub/",
   },
