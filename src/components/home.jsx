@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="bg-gray-800 text-white min-h-screen flex items-center pt-20">
       
@@ -31,32 +33,26 @@ const HeroSection = () => {
               Passionate about building scalable web applications that merge creativity with cutting-edge technology.
             </p>
 
-            <button className="border border-yellow-400 text-yellow-400 px-6 py-2 rounded-full hover:bg-yellow-500 hover:text-white transition duration-300">
+            <button   onClick={() => document.getElementById("portfolio").scrollIntoView({ behavior: 'smooth' })} className="border border-yellow-400 text-yellow-400 px-6 py-2 rounded-full hover:bg-yellow-500 hover:text-white transition duration-300">
               VIEW MY WORK
             </button>
 
             {/* Social Icons */}
             <div className="flex space-x-4 pt-4">
               <a
-                href="#"
+                href="https://github.com/Laiba60"
                 className="border border-gray-700 p-2 rounded-full hover:border-yellow-500 hover:text-yellow-500 transition"
               >
                 <FaGithub />
               </a>
 
               <a
-                href="#"
+                href="https://www.linkedin.com/in/laiba-saeed-9062bb265?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                 className="border border-gray-700 p-2 rounded-full hover:border-yellow-500 hover:text-yellow-500 transition"
               >
                 <FaLinkedin />
               </a>
 
-              <a
-                href="#"
-                className="border border-gray-700 p-2 rounded-full hover:border-yellow-500 hover:text-yellow-500 transition"
-              >
-                <FaFacebook />
-              </a>
             </div>
           </div>
 

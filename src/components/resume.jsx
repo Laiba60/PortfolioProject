@@ -87,8 +87,11 @@ const Resume = () => {
                       <p className="text-gray-300 text-sm mt-1">
                         {item.Description}
                       </p>
-                      <span className="text-gray-400 text-xs mt-1 block">
-                        {item.date}
+                      <span className="text-gray-300 text-xs mt-1 block">
+                       Marks: {item.marks}
+                      </span>
+                      <span className="text-gray-300 text-xs mt-1 block">
+                        Duration:{item.date}
                       </span>
                     </div>
                   </div>

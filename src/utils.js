@@ -30,19 +30,19 @@ export const resumeData = {
   education: [
     {
       title: "BS Computer Science",
-      CGPA: "3.76",
+      marks: "3.76/4.0",
       Description: "Khawaja Fareed University of Engineering and information Technology",
       date: "2021-2025",
     },
      {
       title: "ICS",
-      Marks: "1087/1100",
+      marks: "1087/1100",
       Description: "Madrassat-ul-Binat College",
       date: "2019-2021",
     },
      {
       title: "Matriculation",
-      Marks: "1026/1100",
+      marks: "1026/1100",
       Description: "Fatima Public High School",
       date: "2017-2019",
     },
