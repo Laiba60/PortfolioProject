@@ -14,7 +14,7 @@ const projectsData = [
   {
     title: "Password Manager",
     description: "A secure and responsive password manager built with React and Tailwind CSS that allows users to store, generate, and manage passwords safely with a clean and user-friendly interface.",
-    image: "/images/FitnessWebsite.png", 
+    image: "/images/Password.png", 
     link: "https://neuropassword.com/",
   },
   {
