@@ -47,6 +47,14 @@ const projectsData = [
     image: "/images/LanudaryHub.png",
     link: "https://laiba60.github.io/The-Laundary-Hub/",
   },
+  {
+    title: "EduNexa",
+    description: "A responsive school management system built with React.js and Tailwind CSS, allowing institutions to manage students, staff, and courses efficiently. Features include dashboards, attendance tracking, exam scheduling, and report generation through a user-friendly interface.",
+    image: "/images/edunexa.png",
+    link: "https://unique-squirrel-dfbcf8.netlify.app/login",
+  },
+   
+  
  
 ];
 
