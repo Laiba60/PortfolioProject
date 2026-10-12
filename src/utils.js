@@ -3,6 +3,11 @@
 // ===== Resume Data =====
 export const resumeData = {
   experience: [
+   {
+  title: "Frontend Developer",
+  company: "QTO DEV",
+  Description: "Developed responsive and user-friendly web interfaces using React.js, JavaScript, HTML, and CSS, focusing on reusable components, optimized performance, cross-browser compatibility, and seamless user experiences."
+},
    
     {
   title: "MERN Stack Developer",
@@ -10,20 +15,11 @@ export const resumeData = {
   Description: "Built full-stack web apps with React, Node.js, Express, and MongoDB, delivering seamless UX and optimized performance.",
  
 },
+     
      {
-       title: "MERN Stack Developer Intern",
-      company: "Elevatrix Solutions",
-       Description: "Built full-stack web applications using MongoDB, Express, React, and Node.js, enhancing UI/UX and app performance.",
-       
-    }, {
   title: "Frontend Developer",
   company: "Azlogics",
   Description: "Developed responsive and interactive web interfaces using React, improving user experience and application performance.",
-},
-     {
-  title: "IT Manager",
-  company: "FFC Marketing Trade Center Lahore",
-  Description: "Led IT projects and developed web applications using React, ensuring smooth operations and improved efficiency.",
 }
     // add more experience
   ],
