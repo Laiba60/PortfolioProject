@@ -2,9 +2,21 @@ import React from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeader from "../components/PageHeader";
 import { Animate } from "react-simple-animate";
+import ERP from "../assets/ERP.png";
 
 // Example project data
 const projectsData = [
+  
+{
+  title: "Enterprise ERP Management System",
+  description:
+    "Contributed to the frontend development of an integrated ERP platform featuring Attendance, Career Management, Accounting, CRM, Payroll, and Project Management modules. Focused on building responsive user interfaces, reusable React components, and consistent user experiences across business workflows.",
+  image: ERP,
+  link: null,
+  category: "Frontend Development",
+  technologies: ["React.js", "JavaScript", "Tailwind CSS"]
+},
+
   {
     title: "Fitness Website",
     description: "A responsive portfolio website built with React, TailwindCSS, and animations.",
